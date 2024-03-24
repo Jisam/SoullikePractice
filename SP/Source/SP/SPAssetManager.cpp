@@ -2,4 +2,10 @@
 
 
 #include "SPAssetManager.h"
+#include "AbilitySystemGlobals.h"
 
+void USPAssetManager::StartInitialLoading()
+{
+	Super::StartInitialLoading();
+	UAbilitySystemGlobals::Get().InitGlobalData();
+}

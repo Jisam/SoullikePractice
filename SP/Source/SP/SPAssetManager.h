@@ -13,5 +13,8 @@ UCLASS()
 class SP_API USPAssetManager : public UAssetManager
 {
 	GENERATED_BODY()
+
+public :
+	virtual void StartInitialLoading() override;
 	
 };
