@@ -49,3 +49,6 @@ Session.vim
 
 # Visual Studio
 .vs
+
+# Ignore market place contents
+SP/Content/Paladin_Anim_Set/**
