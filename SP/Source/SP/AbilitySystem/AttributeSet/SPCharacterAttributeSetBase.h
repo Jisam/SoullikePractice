@@ -46,6 +46,11 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "Mana", ReplicatedUsing = OnRep_ManaMax)
 	FGameplayAttributeData ManaMax;
 	ATTRIBUTE_ACCESSORS(USPCharacterAttributeSetBase, ManaMax)
+
+	//Meta Attribute
+	UPROPERTY(BlueprintReadOnly, Category = "Damage")
+	FGameplayAttributeData Damage;
+	ATTRIBUTE_ACCESSORS(USPCharacterAttributeSetBase, Damage)
 	
 	UFUNCTION() 
 	virtual void OnRep_HP(const FGameplayAttributeData& OldHP);
